@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.sidebar{
+    height: 135vh;
+    background-color: #22d3ee;
+    color: white;
+}
+
+
+svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.icon-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 35px;
+}
+
+.icon-text p{
+    padding-left: 15px;
+    font-size: 1.0rem;
+}
+
+.list-item-1{
+    margin-top: 3rem;
+}
+
+
+.main-content{
+    height: 135vh;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column; 
+box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.43);
+    z-index: 1;
+}
+
+.search1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.search1 svg{
+    fill: black;
+}
+
+.search1 input{
+    width: 50%;
+    background-color: #E2E8F0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 50px;
+    margin-right: 200px;
+}
+
+.img-space, .avatar{
+    margin: 0 20px;
+}
+
+.search2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 40px;
+}
+
+.btn{
+    background-color: #1992D4;
+    border-radius: 20px;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border: none;
+}
+
+
+.grid-content{
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    margin-top: 20px;
+}
+
+.cards p{
+    color: #d4d4d4;
+    font-size: 0.9rem;
+}
+
+.card-left{
+    width: 22rem;
+    height: 12rem;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 4px solid #F0B429;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-right {
+    width: 22rem;
+    height: 12rem;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 4px solid #F0B429;
+    padding: 20px;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-grid{
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+.icon-grid svg {
+    fill: black;
+    margin-left: 6px;
+}
+
+.newsfeed{
+
+}
+
+.update{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 10px;
+}
+
+.u-grid{
+    padding: 10px;
+}
+
+.border1, .border2{
+    border-top: 1px solid #d4d4d4;
+}
+
+.u-grid p {
+    color: #d4d4d4;
+    font-size: 0.7rem;
+}
+
+.trending {
+    width: 90%;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 20px;
+}
+
+.t-grid{
+    display: flex;
+    padding: 10px;
+}
+
+.t-grid p{
+    color: #d4d4d4;
+    font-size: 0.7rem;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*My modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
