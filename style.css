@@ -262,6 +262,7 @@ box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.43);
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease-in-out;
 }
 
 .modal-content {
@@ -270,10 +271,23 @@ box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.43);
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
 }
 
 .close {
-    float: right;
+    position: absolute;
+    top: 200px;
+    right: 200px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;

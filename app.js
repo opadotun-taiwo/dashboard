@@ -16,21 +16,25 @@ const closeBtns = document.getElementsByClassName("close");
 // When the user clicks the first button, open the first modal 
 btn1.onclick = function() {
   modal1.style.display = "block";
+  modal1.classList.add("show");
 }
 
 // When the user clicks the second button, open the second modal
 btn2.onclick = function() {
   modal2.style.display = "block";
+  modal2.classList.add("show");
 }
 
 // When the user clicks the third button, open the second modal
 btn3.onclick = function() {
   modal3.style.display = "block";
+  modal3.classList.add("show");
 }
 
 // When the user clicks the third button, open the second modal
 btn4.onclick = function() {
   modal4.style.display = "block";
+  modal4.classList.add("show");
 }
 
 
@@ -38,9 +42,13 @@ btn4.onclick = function() {
 for (let i = 0; i < closeBtns.length; i++) {
   closeBtns[i].onclick = function() {
     modal1.style.display = "none";
+    modal1.classList.remove("show");
     modal2.style.display = "none";
+    modal2.classList.remove("show");
     modal3.style.display = "none";
+    modal3.classList.remove("show");
     modal4.style.display = "none";
+    modal4.classList.remove("show");
   }
 }
 
@@ -48,8 +56,12 @@ for (let i = 0; i < closeBtns.length; i++) {
 window.onclick = function(event) {
   if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4) {
     modal1.style.display = "none";
+    modal1.classList.remove("show");
     modal2.style.display = "none";
+    modal2.classList.remove("show");
     modal3.style.display = "none";
+    modal3.classList.remove("show");
     modal4.style.display = "none";
+    modal4.classList.remove("show");
   }
 }
